@@ -9,16 +9,16 @@
         <module name="foodie-dev-pojo" />
         <module name="foodie-dev-common" />
         <module name="foodie-dev-api" />
+        <module name="foodie-dev-mapper" />
         <module name="foodie-dev-service" />
-        <module name="food-dev-mapper" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="food-dev-mapper" options="-parameters" />
       <module name="foodie-dev-api" options="-parameters" />
       <module name="foodie-dev-common" options="-parameters" />
+      <module name="foodie-dev-mapper" options="-parameters" />
       <module name="foodie-dev-pojo" options="-parameters" />
       <module name="foodie-dev-service" options="-parameters" />
     </option>
