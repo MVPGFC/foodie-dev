@@ -8,6 +8,7 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * @author guofucheng
@@ -15,8 +16,8 @@ import org.springframework.test.context.junit4.SpringRunner;
  * @date 2020/9/20 9:17 下午
  */
 
-@RunWith(SpringRunner.class)
-@SpringBootTest(classes = Application.class)
+//@RunWith(SpringRunner.class)
+//@SpringBootTest(classes = Application.class)
 public class TransTest {
     @Autowired
     private StuService stuService;
@@ -24,7 +25,8 @@ public class TransTest {
     @Autowired
     private TestTransService testTransService;
 
-    @Test
+//    @Test
+//    @Transactional
     public void Mytest(){
         testTransService.testPropagationTrans();
     }
